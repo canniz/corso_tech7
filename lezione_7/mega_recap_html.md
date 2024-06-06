@@ -39,8 +39,6 @@ Ecco un documento aggiornato con descrizioni più dettagliate e senza i tag obso
 - **`<ol>`**: Lista ordinata, i cui elementi sono preceduti da numeri.
 - **`<li>`**: Elemento di una lista, utilizzato all'interno di `<ul>` o `<ol>`.
 - **`<dl>`**: Lista di definizioni, per termini e relative descrizioni.
-- **`<dt>`**: Termine di una definizione in una lista di definizioni.
-- **`<dd>`**: Descrizione di una definizione in una lista di definizioni.
 
 ## 5. Tag di Tabelle
 
@@ -52,8 +50,6 @@ Ecco un documento aggiornato con descrizioni più dettagliate e senza i tag obso
 - **`<tbody>`**: Corpo della tabella, contiene le righe di dati.
 - **`<tfoot>`**: Sezione di chiusura della tabella, contiene righe di riepilogo.
 - **`<caption>`**: Didascalia della tabella, descrive il contenuto della tabella.
-- **`<col>`**: Definisce attributi per una colonna in una tabella.
-- **`<colgroup>`**: Raggruppa colonne in una tabella per applicare attributi comuni.
 
 ## 6. Tag di Form
 
