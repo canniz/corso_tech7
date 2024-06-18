@@ -1,0 +1,78 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #ecf8ff;
+}
+
+.card {
+  position: absolute;
+  top: calc(50% - (228px / 2));
+  left: calc(50% - (601px / 2));
+  width: 601px;
+  height: 228px;
+  background-color: #ffffff;
+  box-shadow: 0px 15px 60px 0px #1da1f233;
+  padding: 35px 31px;
+  border-radius: 10px;
+}
+
+.header {
+  position: relative;
+}
+
+.profile-photo {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.container-username {
+  position: absolute;
+  top: calc(50% - (46px / 2));
+  left: 72px;
+}
+
+.twitter-logo {
+  position: absolute;
+  top: calc(50% - (22px / 2));
+  right: 0;
+  width: 27px;
+  height: 22px;
+}
+
+.highlight {
+  color: #1da1f2;
+}
+
+.main {
+  padding: 20px 0;
+}
+
+.icon-heart {
+  width: 24px;
+  height: 24px;
+}
+
+.likes-counter {
+  position: absolute;
+  top: calc(50% - (18px / 2));
+  left: 40px;
+}
+
+.container-likes {
+  position: relative;
+}
+
+.date {
+  position: absolute;
+  top: calc(50% - (18px / 2));
+  left: 90px;
+}
+
+.footer {
+  position: relative;
+}
