@@ -1,0 +1,70 @@
+body {
+    display: block;
+    height:800px;
+    margin: 0;
+    background-color: #333;
+}
+
+.card {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 3px solid #6D71E0;
+    margin: 50px auto; 
+}
+
+.background {
+    position: absolute;
+    left: -40%;
+    top: -20%;
+    width: 200%;
+    height: 250%;
+}
+
+.title-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 15px;
+    font-family: sans-serif;
+}
+
+.title-container h1 {
+    width: 180px;
+    color: #BACFFF;
+    margin: 0;
+}
+
+.title-container p {
+    font-size:20;
+    color: white;
+    margin: 0;
+}
+
+.bottom-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background-color: #1D0E25;
+}
+
+.abilities {
+    position: absolute;
+    bottom: calc(15%);
+    margin-left: 8px;
+}
+
+.abilities img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 7px solid #1D0E25;
+    margin-left: 10px; 
+    margin-right:10px;
+}

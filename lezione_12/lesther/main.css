@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  
+  body {
+      background-color: blueviolet;
+  }
+  
+  .card {
+      position: absolute;
+      top: calc(50% - (150px / 2));
+      left: calc(50% - (430px / 2));
+      width: 430px;
+      height: 250px;
+      background-color: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+  }
+  
+  .profile-photo {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+  }
+
+  .item{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+  }
+  
+  .immagini{
+  }
+  .piu_grande{
+    width: 200%;
+  }
+  
+  .container-username {
+      position: absolute;
+      width: 70px;
+      height: 32px;
+      top: 5px; 
+      left: 170px;
+  
+  }
