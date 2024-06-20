@@ -1,0 +1,56 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.relative-container {
+    border: 2px solid #333;
+    padding: 20px;
+    margin-bottom: 20px;
+    position: relative;
+    height: 200px;
+}
+
+.relative-box, .absolute-box, .absolute-box-overlay, .absolute-box-corner {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+}
+
+.relative-box {
+    background-color: lightblue;
+    position: relative;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute-box {
+    background-color: lightcoral;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.absolute-box-overlay {
+    background-color: rgba(255, 0, 0, 0.5);
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.absolute-box-corner {
+    background-color: lightgreen;
+    position: absolute;
+    top: 0;
+    left: 0;
+}

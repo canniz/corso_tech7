@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position: Absolute and Relative Examples</title>
+    <link rel="stylesheet" href="styles_position_examples.css">
+</head>
+<body>
+    <h1>Esempi di `position: relative` e `position: absolute`</h1>
+    
+    <section>
+        <h2>Esempio 1: Elemento Relativo alla sua Posizione Originale</h2>
+        <div class="relative-container example-1">
+            <div class="relative-box">Relative</div>
+        </div>
+        <p>In questo esempio, l'elemento è spostato rispetto alla sua posizione originale usando `position: relative`.</p>
+    </section>
+    
+    <section>
+        <h2>Esempio 2: Posizionamento Assoluto rispetto al Contenitore</h2>
+        <div class="relative-container example-2">
+            <div class="absolute-box">Absolute</div>
+        </div>
+        <p>In questo esempio, l'elemento è posizionato rispetto al contenitore più vicino con `position: relative` usando `position: absolute`.</p>
+    </section>
+    
+    <section>
+        <h2>Esempio 3: Overlay di Elementi con Position</h2>
+        <div class="relative-container example-3">
+            <div class="relative-box">Relative</div>
+            <div class="absolute-box-overlay">Absolute Overlay</div>
+        </div>
+        <p>In questo esempio, un elemento assoluto è sovrapposto a un elemento relativo.</p>
+    </section>
+    
+    <section>
+        <h2>Esempio 4: Posizionamento in un Angolo Specifico</h2>
+        <div class="relative-container example-4">
+            <div class="absolute-box-corner">Top Left</div>
+            <div class="absolute-box-corner" style="top: auto; bottom: 0;">Bottom Left</div>
+            <div class="absolute-box-corner" style="left: auto; right: 0;">Top Right</div>
+            <div class="absolute-box-corner" style="top: auto; bottom: 0; left: auto; right: 0;">Bottom Right</div>
+        </div>
+        <p>In questo esempio, gli elementi sono posizionati in ciascun angolo del contenitore usando `position: absolute`.</p>
+    </section>
+</body>
+</html>
