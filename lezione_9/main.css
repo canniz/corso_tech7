@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /*  .text {
+    color: red;
+    color: rgb(255, 0, 0);
+    color: rgba(255, 0, 0, 0.5);
+    color: #ff4757;
+    background-color: #0000ff;
+  }
+  
+  .card {
+    background-color: red;
+    width: 100%;
+    height: 100%;
+  } */
+  
+  #header {
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid black;
+  }
+  
+  #main {
+    width: 100%;
+    height: 80%;
+    padding: 50px;
+    overflow-y: auto;
+  }
+  
+  #footer {
+    width: 100%;
+    height: 10%;
+    border-top: 1px solid black;
+  }
+  
+  .card {
+    width: 200px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 20px;
+  }
+  
+  .button-chat {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background: red;
+  }
+
+
+  .twitterCard {
+    width: 35%;
+    height: 25%;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .twitterLogo {
+    width: 30px;
+    height: 30px;
+  }
+  .likes {
+    width: 24px;
+    height: 24px;
+  }
+
+  .face {
+    width: 50px;
+    height: 50px;
+  }
+
+  .cardHeader, .cardBody, .cardFooter {
+    display: flex;
+    align-items: center;
+}
+
+.cardHeader {
+  justify-content: space-between;
+}
+
+.cardBody {
+  justify-content: center;
+}
+
+.cardFooter {
+  justify-content: flex-end;
+}
