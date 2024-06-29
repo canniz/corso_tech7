@@ -1,0 +1,183 @@
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main > .section {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - (16px * 2));
+  padding: 32px 16px;
+  background: var(--color-secondary);
+  border-radius: 14px;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+#main > .section > .header > .title {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+#main > .section > .header > .subtitle {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+#main > .section > .header > .subtitle > .light {
+  font-weight: 300;
+}
+
+#main > .section > #game-container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+}
+
+#main > .section > #game-container > .container-moves {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#main > .section > #game-container > .container-moves > .move {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 25px;
+  border-radius: 7px;
+  transition: outline 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#main > .section > #game-container > .container-moves > .move:hover {
+  outline: 3px solid var(--color-accent);
+}
+
+#main > .section > #game-container > .container-moves > .move.active {
+  outline: 3px solid var(--color-accent);
+}
+
+#main > .section > #game-container > .container-moves > .move > .emoji {
+  font-size: 36px;
+}
+
+#main > .section > #game-container > .container-moves > .move > .label {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+#main > .section > #game-container > #button-confirm-move {
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-secondary);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#main > .section > #game-container > #button-confirm-move:not(:disabled) {
+  background: var(--color-accent);
+}
+
+#main > .section > #game-container > #button-confirm-move:not(:disabled):hover {
+  background: var(--color-accent-hover);
+}
+
+#main > .section > #game-container > #button-confirm-move:disabled {
+  background: var(--color-accent-disabled);
+}
+
+#main > .section > #game-container > .container-loader {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 24px;
+}
+
+#main > .section > #game-container > .container-loader > .text {
+  padding: 0 24px;
+  font-size: 18px;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+#main > .section > #game-container > .container-loader > .spinner {
+  width: 40px;
+  height: 40px;
+  margin-top: 24px;
+  animation: spin 1s linear infinite;
+  color: var(--color-accent);
+}
+
+#main
+  > .section
+  > #game-container
+  > .container-loader
+  > .spinner
+  > .spinner-circle {
+  opacity: 0.25;
+}
+
+#main
+  > .section
+  > #game-container
+  > .container-loader
+  > .spinner
+  > .spinner-path {
+  opacity: 0.75;
+}
+
+#main > .section > #game-container > .container-result {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 24px;
+}
+
+#main > .section > #game-container > .container-result > .text {
+  padding: 0 24px;
+  font-size: 22px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+#main > .section > #game-container > .container-result > #button-restart {
+  margin: 0 auto;
+  margin-top: 24px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-secondary);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  background: var(--color-accent);
+}
+
+#main > .section > #game-container > .container-result > #button-restart:hover {
+  background: var(--color-accent-hover);
+}
+
+@media (min-width: 1024px) {
+  #main > .section {
+    width: 450px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
