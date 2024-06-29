@@ -1,0 +1,51 @@
+#main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#main > .section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: calc(100% - (16px * 2));
+  padding: 32px 16px;
+  background: var(--color-secondary);
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+}
+
+@media (min-width: 1024px) {
+  #main > .section {
+    width: 450px;
+  }
+}
+
+#main > .section > .title {
+  font-size: 28px;
+  font-weight: 500;
+  color: var(--color-primary);
+}
+
+#main > .section > .description {
+  margin-top: 16px;
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--color-primary);
+}
+
+#main > .section > .button {
+  margin-top: 28px;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: var(--color-accent);
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-secondary);
+  transition: color 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#main > .section > .button:hover {
+  background: var(--color-accent-hover);
+}
