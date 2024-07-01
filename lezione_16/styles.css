@@ -54,8 +54,13 @@ body {
 }
 
 /* Media Query Example */
-@media (max-width: 768px) {
+@media (max-width: 768px) and (min-width: 0px){
     .content {
         flex-direction: column;
     }
 }
+
+6 div disposti:
+0-600px => elementi in colonna
+600px - 728px => elementi in due colonne
+728+ => in un'unica riga 

@@ -1,0 +1,37 @@
+.element{
+    background-color: blueviolet;
+    margin: 1rem;
+}
+
+@media (max-width: 600px){
+    .element{
+        width: 400px;
+        height: 400px;
+    }
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 728px) and (min-width: 600px){
+    .element{
+        width: 270px;
+        height: 270px;
+    }
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 728px) and (orientation:landscape){
+    .element{
+        width: 400px;
+        height: auto;
+    }
+    .container{
+        height: 200px;
+        display: flex;
+        flex-direction: row;
+    }
+}
