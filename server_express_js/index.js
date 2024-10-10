@@ -1,14 +1,25 @@
+// Dovete prima fare "npm install"
+
 const express = require("express");
+const bodyParser = require("body-parser");
 const app = express();
 const port = 3000;
 
 app.get("/", (req, res) => {
-  res.send("Ciao mondo");
+  res.sendFile(__dirname + "home.html");
 });
 
 app.post("/sign-in", (req, res) => {
   console.log(req.body);
-  res.send("POST request to the homepage");
+  let username = req.body.username;
+  let password = req.body.password;
+  if(username == "admin" && pa„ssword == "123456"){
+    res.status(200);
+    res.send("LOGIN TUTTO A POSTO");
+  }else{
+    res.status(403);
+    res.send("ERROREEEEEE");
+  }
 });
 
 app.listen(port, () => {
