@@ -13,7 +13,7 @@ app.post("/sign-in", (req, res) => {
   console.log(req.body);
   let username = req.body.username;
   let password = req.body.password;
-  if(username == "admin" && pa„ssword == "123456"){
+  if(username == "admin" && password == "123456"){
     res.status(200);
     res.send("LOGIN TUTTO A POSTO");
   }else{
